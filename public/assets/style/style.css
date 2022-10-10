@@ -1,0 +1,42 @@
+body {
+  background: radial-gradient(circle, #5095e4 40%, #b091e5);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.board {
+  display: grid;
+  width: 350px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.board button {
+  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0px;
+  padding: 0px;
+  font-size: 3em;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: .2s;
+}
+
+.square{
+  background: #b091e57c !important;
+  border-radius: 50% !important;
+}
+.cross{
+  background: #5095e479 !important;
+  transform: rotate(45deg) scale(0.8);
+}
