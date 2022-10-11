@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- FAVICON -->
+        <link rel="icon" href="./assets/images/favicon.png" type="image/png" />
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="./assets/style/style.css" />
+        <!-- <link rel="stylesheet" href="./assets/style/css/main.css" /> -->
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+
+        <div class="board">
+            <button class="boxs" id="1" onclick="cliquer('1')"></button>
+            <button class="boxs" id="2" onclick="cliquer('2')"></button>
+            <button class="boxs" id="3" onclick="cliquer('3')"></button>
+            <button class="boxs" id="4" onclick="cliquer('4')"></button>
+            <button class="boxs" id="5" onclick="cliquer('5')"></button>
+            <button class="boxs" id="6" onclick="cliquer('6')"></button>
+            <button class="boxs" id="7" onclick="cliquer('7')"></button>
+            <button class="boxs" id="8" onclick="cliquer('8')"></button>
+            <button class="boxs" id="9" onclick="cliquer('9')"></button>
+        </div>
+
+        <p id="message">TicTacToe</p>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./assets/script/socket.js"></script>
+    </body>
+</html>
