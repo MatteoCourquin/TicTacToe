@@ -81,6 +81,7 @@ boxs.forEach((box) => {
 
 var nombreCoups = 0;
 var joueur = 'X'
+var boxBtn = document.querySelectorAll('.boxs')
 
 function cliquer(id){
   var btn = document.getElementById(id);
@@ -106,7 +107,9 @@ function verifGagnant() {
     document.getElementById('1').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelector('.board').style.overflow = hidden
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('4').innerText === document.getElementById('5').innerText &&
@@ -114,7 +117,9 @@ function verifGagnant() {
     document.getElementById('4').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('7').innerText === document.getElementById('8').innerText &&
@@ -122,7 +127,9 @@ function verifGagnant() {
     document.getElementById('7').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('1').innerText === document.getElementById('4').innerText &&
@@ -131,7 +138,9 @@ function verifGagnant() {
   ) {
     document.getElementById('message').innerText = 'Gagné !'
     console.log(document.querySelectorAll('.boxs'));
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('2').innerText === document.getElementById('5').innerText &&
@@ -139,7 +148,9 @@ function verifGagnant() {
     document.getElementById('2').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('3').innerText === document.getElementById('6').innerText &&
@@ -147,7 +158,9 @@ function verifGagnant() {
     document.getElementById('3').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('1').innerText === document.getElementById('5').innerText &&
@@ -155,7 +168,9 @@ function verifGagnant() {
     document.getElementById('1').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
   else if (
     document.getElementById('3').innerText === document.getElementById('5').innerText &&
@@ -163,7 +178,9 @@ function verifGagnant() {
     document.getElementById('3').innerText !== ''
   ) {
     document.getElementById('message').innerText = 'Gagné !'
-    document.querySelectorAll('.boxs').disabled = true;
+    boxBtn.forEach(box => {
+      box.disabled = true;
+    })
   }
 
 }
